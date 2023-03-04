@@ -10,7 +10,7 @@
     <style>
 
       h1 {
-      color:##880000;
+      color:#880000;
       border: 10px solid indianred;
       background-color: darkred;
       font-style: bold;
@@ -25,7 +25,6 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
-        font-size: ;
         font-family: 'Raleway', sans-serif;
         height: 10vh;
         zoom: unset;
@@ -83,15 +82,14 @@ font-size: 30px;
       #logoteam {
         width: 40%;
         position: relative;
-left: 800px;
-top: 870px;
+left: 750px;
+top: 1000px;
         margin-left: auto;
       }
 
       #gioithieu {
         background-color: darkred;
         text-align: center;
-        line-height= 20px;
       }
       
       #stray {
@@ -105,7 +103,6 @@ top: 870px;
       }
       
       #videostray {
-        line-height= 20px;
         position: relative;
         top: -220px;
           left: 180px;
@@ -141,10 +138,10 @@ top: 870px;
   border: 3px solid #f1f1f1;
   position: relative;
   top: -320px;
-  left: 685px;
+  left: 666.5px;
   transform: translate(-50%, -50%);
   z-index: 3;
-  width: auto;
+  width:97%;
   height: 325px;
   padding: 20px;
   text-align: center;
@@ -154,6 +151,18 @@ top: 870px;
   background-attachment: scroll;
       }
 
+      #avt {
+        border-radius: 50%;
+        position: relative;
+        height: 5%;
+        width: 15%;
+      }
+
+      #song {
+        position:relative;
+        left:6%;
+      }
+
       .main1 {
         background-color: rgb(0,0,0);
   background-color: rgba(0,0,0, 0.8);
@@ -161,16 +170,41 @@ top: 870px;
   font-weight: bold;
   border: 3px solid #f1f1f1;
   position: absolute;
-  top: 160%;
+  top: 180%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
   width: 90%;
-  height: 250%;
+  height: 280%;
   padding: 0;
   text-align: left;
   background-size: cover;
   font-size: 20px;
+      }
+
+      .music {
+        width: 40%;
+        height: 7%;
+        padding: 30px;
+        box-shadow: 0 0 20px rgba(red,0,0,0,5);
+        background: darkred;
+        border-radius: 7px;
+        color: white;
+        font-size: medium;
+        text-align: center;
+        align-items: center;
+        position: relative;
+        top:-25%;
+        left: 27%;
+        z-index: 4;
+        font-size: small;
+      }
+
+      .track {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        cursor: pointer;
       }
       
       </style>   
@@ -258,10 +292,21 @@ Hãy nói lời cầu nguyện khi còn có thể, “anh hùng”.
               Cập nhật 4 quái vật, 3 súng, 2 bản đồ
           </div>
 
-  </body>
+          <div class="music">
+            <center>
+            <h2>
+              Meganeko - The Cyber Grind
+            </h2>
+            <div class="track">
+              <img width="150px" id="avt" src="https://i1.sndcdn.com/artworks-vZOLZpLRgbwDyzpf-ZR5NXg-t500x500.jpg"/></image>
+              <audio width="100px" id="song" src="assets/meganeko.mp3" controls></audio>
+            </center>
+            </div>
+            </div>
 
-  <script>
-    const cd = document.querySelector('#congdong');
+          <script>
+
+const cd = document.querySelector('#congdong');
     const wk = document.querySelector('#wiki');
     const bl = document.querySelector('#bulu');
     const gp = document.querySelector('#gameplay');
@@ -309,12 +354,6 @@ Hãy nói lời cầu nguyện khi còn có thể, “anh hùng”.
       dn.style.width ='150px';
     }
 
-    document.body.addEventListener("keydown", (event)=> {
-      if (event.ctrlkey) {event.preventDefault() }
-    });
-
-    .xe-clearfix
-
-  </script>
-
+ </script>
+</body>
 </html>
