@@ -15,7 +15,7 @@
       background-color: darkred;
       font-style: bold;
       text-align: center;
-      font-size: 10vh;
+      font-size: 60px;
       color: white;
       margin-top: 0;
       }
@@ -149,6 +149,7 @@ top: 1000px;
   font-size: 20px;
   margin:auto;
   background-attachment: scroll;
+  text-align: left;
       }
 
       #avt {
@@ -170,7 +171,7 @@ top: 1000px;
   font-weight: bold;
   border: 3px solid #f1f1f1;
   position: absolute;
-  top: 180%;
+  top: 170%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
@@ -272,11 +273,11 @@ Hãy nói lời cầu nguyện khi còn có thể, “anh hùng”.
             </div>
             <div id="stray">
               <video width="600" height="300" align="left" controls autoplay loop>
-                <source src="https://cdn.glitch.global/96a86253-9360-49a6-8b39-ab153ba340ff/332590485_6082335811830395_900886840814739606_n.mp4?v=1677419840897" type="video/mp4">
+                <source src="assets/thmbulu.mp4" type="video/mp4">
               </video>
           </div>
           <div>
-            <span id="videostray"> Video minh họa mob stray</span>
+            <span id="videostray"> Video quá trình làm game </span>
             </div>
             
           <div id="menugame">
@@ -288,8 +289,16 @@ Hãy nói lời cầu nguyện khi còn có thể, “anh hùng”.
           </div>
           
           <div id="version">
-            Phiên bản máy tính: 0.1 (Cập nhật 1/3/2023)
-              Cập nhật 4 quái vật, 3 súng, 2 bản đồ
+            <a href="https://drive.google.com/drive/folders/1Df7MB9tMDfU97ntEV0yM9jsxhd7Vv9_w">Cập nhật bản Demo (23.2.2023) (thêm demo dash va 3 cây súng)</a>
+            <br><a href="https://drive.google.com/drive/folders/1wvQ3mYvImippNHsk3Zu96HKKM4DcB1EZ">Cập nhật bản 0.1.3 (ngày 25.2.2023) (thêm dive và slide + hiệu ứng, âm thanh di chuyển, giảm độ giật nailgun)</a>
+            <br><a href="https://drive.google.com/drive/folders/1plXJRmrSx7mxYi5-8oVjoXHvveSfMr3l">Cập nhật bản 0.1.4 (26.2.2023) (thêm double jump, sửa lỗi âm thanh + movement, thêm alt fire (giữ chuột phải) cho pistol)</a>
+            <br><a href="https://drive.google.com/drive/folders/1HZwpYllDWVTTJlIP3SUBjl-2miZaDtj5">Cập nhật bản 0.1.5 (27.2.2023) (thêm alt fire cho shotgun, thêm main menu, setting volume, sensitivity, resolution, fullscreen và loadscreen, thêm hiệu ứng psx)</a>
+            <br><a href="https://drive.google.com/drive/folders/1HZwpYllDWVTTJlIP3SUBjl-2miZaDtj5">Cập nhật bản 0.1.6 (28.2.2023) (thêm alt fire cho súng trường, thêm hiệu ứng vào game)</a>
+            <br><a href="https://drive.google.com/drive/folders/1FIOrQJfje8ZzUIyZN6Q2FzRAAqIrTHii">Cập nhật bản 0.2.1 (5.3.2023) (thêm stray, strayAI, máu và hồi máu player, healthbar)</a>
+            <br><a href="https://drive.google.com/drive/folders/1hIL3QtJM8DImCYcJ_zC8jqlO-lqRW-j2">Cập nhật bản 0.3 (6.3.2023) (thêm malicous moai)</a>
+            <br><a href="https://drive.google.com/drive/folders/1y9F5i3I77SOifLabu2uPDVOmb844J98C">Cập nhật bản 0.4 (7.3.2023) (thêm filth)</a>
+            <br><a href="https://drive.google.com/drive/folders/1OwHnURwKwz6sGtXj3CFVPrR7YBXzfamH">Cập nhật bản 0.5 (8.3.2023) (Thêm hệ thống spawn quái nhiều và khó hơn qua từng wave, thêm iframes lúc dash và sau khi bị damaged, thêm hiệu ứng spawn quái)</a>
+            <br><a href="https://drive.google.com/drive/folders/1gpzxDD7FV8Ntn4nXL8TcX3XhWXpClzoL?fbclid=IwAR10SFq85Vtbon3M49Uas0z6y8clz7EziTRcCkKGKsvmO1u3CFvLS7PRLKA">Cập nhật bản 0.6 (9.3.2023) (Thêm chuyển súng bằng số + sound effect, thêm crowd cheer sau mỗi wave, thêm gamemanager, deathscreen, pause menu, scoreboard, tutorial map, nhạc juan ji)</a>
           </div>
 
           <div class="music">
@@ -304,56 +313,55 @@ Hãy nói lời cầu nguyện khi còn có thể, “anh hùng”.
             </div>
             </div>
 
-          <script>
-
-const cd = document.querySelector('#congdong');
-    const wk = document.querySelector('#wiki');
-    const bl = document.querySelector('#bulu');
-    const gp = document.querySelector('#gameplay');
-    const dn = document.querySelector('#doingu');
-
-    cd.onmouseover = () => {
-      cd.style.width ='200px';
-    }
-
-    cd.onmouseleave = () => {
-      cd.style.width ='150px';
-    }
-
-
-    wk.onmouseover = () => {
-      wk.style.width ='200px';
-    }
-
-    wk.onmouseleave = () => {
-      wk.style.width ='150px';
-    }
-
-
-    bl.onmouseover = () => {
-      bl.style.width ='200px';
-    }
-
-    bl.onmouseleave = () => {
-      bl.style.width ='150px';
-    }
-
-    gp.onmouseover = () => {
-      gp.style.width ='200px';
-    }
-
-    gp.onmouseleave = () => {
-      gp.style.width ='150px';
-    }
-
-    dn.onmouseover = () => {
-      dn.style.width ='200px';
-    }
-
-    dn.onmouseleave = () => {
-      dn.style.width ='150px';
-    }
-
- </script>
+            <script>
+              const cd = document.querySelector('#congdong');
+              const wk = document.querySelector('#wiki');
+              const bl = document.querySelector('#bulu');
+              const gp = document.querySelector('#gameplay');
+              const dn = document.querySelector('#doingu');
+          
+              cd.onmouseover = () => {
+                cd.style.width ='200px';
+              }
+          
+              cd.onmouseleave = () => {
+                cd.style.width ='150px';
+              }
+          
+          
+              wk.onmouseover = () => {
+                wk.style.width ='200px';
+              }
+          
+              wk.onmouseleave = () => {
+                wk.style.width ='150px';
+              }
+          
+          
+              bl.onmouseover = () => {
+                bl.style.width ='200px';
+              }
+          
+              bl.onmouseleave = () => {
+                bl.style.width ='150px';
+              }
+          
+              gp.onmouseover = () => {
+                gp.style.width ='200px';
+              }
+          
+              gp.onmouseleave = () => {
+                gp.style.width ='150px';
+              }
+          
+              dn.onmouseover = () => {
+                dn.style.width ='200px';
+              }
+          
+              dn.onmouseleave = () => {
+                dn.style.width ='150px';
+              }
+          
+            </script>
 </body>
 </html>

@@ -80,6 +80,18 @@ bottom: -900px;
         background-color: darkred;
         text-align: center;
       }
+
+      #amogus {
+        position: relative;
+        top: 300px;
+      }
+
+      #loading {
+        text-align: center;
+        position: relative;
+        font-size: larger;  
+        top: 300px;    
+      }
   
       .main1 {
         background-color: rgb(0,0,0);
@@ -88,13 +100,13 @@ bottom: -900px;
   font-weight: bold;
   border: 3px solid #f1f1f1;
   position: absolute;
-  top: 130%;
+  top: 170%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
   width: 90%;
-  height: 200%;
-  padding: 20px;
+  height: 280%;
+  padding: 0;
   text-align: left;
   background-size: cover;
   font-size: 20px;
@@ -153,6 +165,7 @@ bottom: -900px;
     </div>
         
         <div class="commentbox">
+          <center>
           <p> Bạn nghĩ gì? </p>
           <form class="commentform">
             <input type="text" placeholder="Tên">
@@ -162,7 +175,19 @@ bottom: -900px;
               Đăng
             </button>
           </form>
-        
+        </center>
+        </div>
+
+        <div>
+          <center>
+          <image width="300px" height="300px" id="amogus" src="assets/334614787_936813784339922_8877992012134619989_n.gif"></image>
+        </center>
+        </div>
+
+        <div id="loading">
+          <h4>
+            Loading...
+          </h4>
         </div>
           <script>
     const cd = document.querySelector('#congdong');
